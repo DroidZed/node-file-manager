@@ -13,7 +13,7 @@ const app = express();
 app.disable('x-powered-by'); // less hackers know about our stack
 
 app.use(cors());
-app.use(morgan('dev'));
+app.use(morgan('combined'));
 app.use(express.urlencoded({ extended: true }));
 
 app.use('/api/static', express.static('public/'));

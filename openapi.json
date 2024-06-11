@@ -30,7 +30,7 @@
               "schema": {
                 "type": "object",
                 "properties": {
-                  "files": {
+                  "file": {
                     "type": "string",
                     "format": "binary"
                   }

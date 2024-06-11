@@ -17,10 +17,11 @@ RUN --mount=type=bind,source=package.json,target=package.json \
 # Create a non-privileged user that the app will run under.
 # See https://docs.docker.com/go/dockerfile-user-best-practices/
 ARG UID=10001
+
 RUN adduser \
     --disabled-password \
     --gecos "" \
-    --home "/nonexistent" \
+    --home "/fileManagerusr" \
     --shell "/sbin/nologin" \
     --no-create-home \
     --uid "${UID}" \
