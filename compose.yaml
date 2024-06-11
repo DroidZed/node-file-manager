@@ -11,8 +11,8 @@ services:
     ports:
       - '${PORT}:${PORT}'
     volumes:
-      - uploadDir:/usr/src/app/public
+      - public:/usr/src/app/public
     restart: unless-stopped
 
 volumes:
-  uploadDir:
+  public:

@@ -1,11 +1,9 @@
 import multer, { diskStorage } from 'multer';
 
-import { __DEV__ } from '../config/env.js';
-
 const upload = multer({
   storage: diskStorage({
     destination: (_req, _file, callback) => {
-      callback(null, __DEV__ ? 'public/' : '/usr/src/app/public/');
+      callback(null, 'public/');
     },
     filename: (_req, file, callback) => {
       const parts = file.originalname.split('.');
