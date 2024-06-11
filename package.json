@@ -6,9 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js",
-    "docs:debug": "swagger-cli validate -d docs/index.json",
-    "docs:generate": "swagger-cli bundle docs/index.json --outfile openapi.json"
+    "dev": "nodemon index.js"
   },
   "keywords": [],
   "author": "",
