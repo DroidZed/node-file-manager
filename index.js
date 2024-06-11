@@ -10,7 +10,7 @@ import openApiDocumentation from './openapi.json' assert { type: 'json' };
 
 const app = express();
 
-app.disable('x-powered-by'); // less hackers know about our stack
+app.disable('x-powered-by');
 
 app.use(cors());
 app.use(morgan('combined'));

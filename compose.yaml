@@ -3,8 +3,8 @@ services:
   server:
     build:
       context: .
-    container_name: tawasalna-file-manager
-    image: ipactconsult/tawasalna-file-manager:${IMAGE_TAG}
+    container_name: node-file-manager
+    image: droidzed/node-file-manager:${IMAGE_TAG}
     environment:
       - NODE_ENV=production
       - PORT=${PORT}

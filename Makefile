@@ -2,7 +2,7 @@
 include .env
 
 build:
-	docker build -t ipactconsult/tawasalna-file-manager:$(IMAGE_TAG) .
+	docker build -t droidzed/node-file-manager:$(IMAGE_TAG) .
 
 compose:
 	docker compose up -d

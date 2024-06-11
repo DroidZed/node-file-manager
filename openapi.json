@@ -4,9 +4,9 @@
     "title": "File Manager API",
     "description": "API endpoints file manager service documented on swagger",
     "contact": {
-      "name": "IPACT Consult",
-      "email": "ipactconsult@gmail.com",
-      "url": "https://ipactconsult.com"
+      "name": "DroidZed",
+      "email": "aymen.dhahri@outlook.fr",
+      "url": "https://droidzed.github.io"
     },
     "version": "1.0.0"
   },
