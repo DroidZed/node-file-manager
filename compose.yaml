@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+  server:
+    build:
+      context: .
+    container_name: tawasalna-file-manager
+    image: ipactconsult/tawasalna-file-manager:${IMAGE_TAG}
+    environment:
+      - NODE_ENV=production
+      - PORT=${PORT}
+    ports:
+      - '${PORT}:${PORT}'
+    volumes:
+      - uploadDir:/usr/src/app/public
+    restart: unless-stopped
+
+volumes:
+  uploadDir:
