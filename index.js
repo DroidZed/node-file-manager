@@ -6,7 +6,7 @@ import { PORT } from './src/config/env.js';
 import mainRouter from './src/routes/mainRouter.js';
 
 import swaggerUi from 'swagger-ui-express';
-import openApiDocumentation from './openapi.json' assert { type: 'json' };
+import openApiDocumentation from './openapi.json';
 
 const app = express();
 
